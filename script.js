@@ -1,0 +1,200 @@
+
+const ui = {    
+    playlist: document.getElementById("playlist"),
+
+    title: document.getElementById("songTitle"),
+    artist: document.getElementById("songArtist"),
+    duration: document.getElementById("songDuration"),
+    message: document.getElementById("songMessage"),
+    counter: document.getElementById("songCounter"),
+
+    previous: document.getElementById("previousButton"),
+    next: document.getElementById("nextButton"),
+    youtube: document.getElementById("youtubeButton"),
+
+    albumCover: document.getElementById("albumCover"),
+
+    playlistButton: document.getElementById("playlistButton"),
+
+    sidebar: document.getElementById("sidebar"),
+    playlistList: document.getElementById("playlistList"),
+    overlay: document.getElementById("overlay")
+
+};
+
+
+let currentSong = 0;
+
+function updateActiveSong() {
+
+    const items = document.querySelectorAll(".playlist-item");
+
+    items.forEach((item, index) => {
+
+        item.classList.toggle("active", index === currentSong);
+
+    });
+
+    const active = document.querySelector(".playlist-item.active");
+
+    if (active) {
+
+        active.scrollIntoView({
+
+            behavior: "smooth",
+            block: "nearest"
+
+        });
+
+    }
+
+}
+
+function showSong(index) {
+
+    const song = songs[index];
+
+    ui.title.textContent = song.title;
+    ui.artist.textContent = song.artist;
+
+    ui.duration.textContent = song.duration || "";
+    ui.message.textContent = song.message || "";
+
+    ui.counter.textContent =
+        `Canción ${index + 1} de ${songs.length}`;
+
+    if(song.cover){
+        ui.albumCover.src=song.cover;
+    } else {
+        ui.albumCover.src="assets/covers/default.jpg";
+    }
+
+    ui.previous.disabled = index === 0;
+    ui.next.disabled = index === songs.length - 1;
+
+    updateActiveSong();
+
+}
+
+function buildPlaylist() {
+
+    ui.playlistList.innerHTML = "";
+
+    songs.forEach((song, index) => {
+
+        const button = document.createElement("button");
+
+        button.className = "playlist-item";
+
+        button.dataset.index = index;
+        button.innerHTML = `
+            <div class="playlist-number">
+                ${String(index + 1).padStart(2, "0")}
+            </div>
+
+            <div class="playlist-text">
+                <div class="playlist-title">${song.title}</div>
+                <div class="playlist-artist">${song.artist}</div>
+            </div>
+        `;
+
+        button.addEventListener("click", () => {
+
+            currentSong = index;
+
+            showSong(currentSong);
+
+            closeSidebar();
+
+        });
+
+        ui.playlistList.appendChild(button);
+
+    });
+
+}
+function openSidebar() {
+
+    ui.sidebar.classList.add("open");
+    ui.overlay.classList.add("visible");
+
+    ui.playlistButton.textContent = "✕ Cerrar";
+
+}
+
+function closeSidebar() {
+
+    ui.sidebar.classList.remove("open"); 
+    ui.overlay.classList.remove("visible");
+
+    ui.playlistButton.textContent = "☰ Playlist";
+
+}
+
+ui.playlistButton.addEventListener("click", () => {
+
+    if(ui.sidebar.classList.contains("open")){
+
+        closeSidebar();
+
+    } else {
+
+        openSidebar();
+
+    }
+
+});
+
+ui.overlay.addEventListener("click", () => {
+
+    closeSidebar();
+
+});
+
+ui.next.addEventListener("click", () => {
+
+    if(currentSong < songs.length - 1){
+
+        currentSong++;
+
+        showSong(currentSong);
+
+    }
+
+});
+
+ui.previous.addEventListener("click", () => {
+
+    if(currentSong > 0){
+
+        currentSong--;
+
+        showSong(currentSong);
+
+    }
+
+});
+
+ui.youtube.addEventListener("click", () => {
+
+    const song = songs[currentSong];
+
+    if (!song.videoId) {
+
+        alert("Esta canción todavía no tiene un vídeo asociado.");
+
+        return;
+
+    }
+
+    const url = `https://www.youtube.com/watch?v=${song.videoId}`;
+
+    window.open(url, "_blank");
+
+});
+
+buildPlaylist();
+
+showSong(currentSong);
+
+closeSidebar();

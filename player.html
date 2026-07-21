@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Canciones Para Ella</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/icon/icon.png">
+
+</head>
+
+<body>
+
+    <section id="playlist">
+
+        <div class="playlist-container">
+
+            <div class="counter-container">
+
+                <p id="songCounter"></p>
+
+            </div>
+
+            <div class="album-container">
+
+                <img
+                    id="albumCover"
+                    src=""
+                    alt="Portada del álbum">
+
+            </div>
+
+            <div class="song-info">
+
+                <h2 id="songTitle"></h2>
+
+                <h3 id="songArtist"></h3>
+
+                <p id="songDuration"></p>
+
+                <p id="songMessage"></p>
+
+            </div>
+
+            <div class="controls">
+
+                <button id="previousButton">
+                    ◀
+                </button>
+
+                <button id="youtubeButton">
+                    Escuchar
+                </button>
+
+                <button id="nextButton">
+                    ▶
+                </button>
+
+            </div>
+
+            <button id="playlistButton">
+                ☰ Playlist
+            </button>
+
+        </div>
+
+    </section>
+
+    <div id="overlay"></div>
+
+    <aside id="sidebar">
+
+        <h2>Playlist</h2>
+        <div id="playlistList"></div>
+
+    </aside>
+
+
+    <script src="songs.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
