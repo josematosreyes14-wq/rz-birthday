@@ -51,6 +51,16 @@
 
     background:#1f2937;
 
+    transition:
+        transform .4s ease,
+        box-shadow .4s ease;
+
+}
+
+.fade-in #albumCover{
+
+    transform:scale(1.03);
+
 }
 
 .song-info{

@@ -1,8 +1,8 @@
 #songContent{
 
     transition:
-        opacity .25s ease,
-        transform .25s ease;
+        opacity .35s ease,
+        transform .35s ease;
 
 }
 
@@ -10,7 +10,9 @@
 
     opacity:0;
 
-    transform:translateY(10px);
+    transform:
+        translateY(12px)
+        scale(.98);
 
 }
 
@@ -18,6 +20,8 @@
 
     opacity:1;
 
-    transform:translateY(0);
+    transform:
+        translateY(0)
+        scale(1);
 
 }

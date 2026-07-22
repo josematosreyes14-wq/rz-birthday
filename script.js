@@ -18,7 +18,7 @@ const ui = {
     songContent: document.getElementById("songContent"),
 
     playlistButton: document.getElementById("playlistButton"),
-
+    closeSidebarButton: document.getElementById("closeSidebarButton"),
     sidebar: document.getElementById("sidebar"),
     playlistList: document.getElementById("playlistList"),
     overlay: document.getElementById("overlay")
@@ -147,8 +147,6 @@ function buildPlaylist() {
 
             animateSongChange(currentSong);
 
-            closeSidebar();
-
         });
 
         ui.playlistList.appendChild(button);
@@ -185,6 +183,12 @@ ui.playlistButton.addEventListener("click", () => {
         openSidebar();
 
     }
+
+});
+
+ui.closeSidebarButton.addEventListener("click", () => {
+
+    closeSidebar();
 
 });
 

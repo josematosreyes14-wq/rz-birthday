@@ -48,6 +48,13 @@
     box-shadow:
     0 10px 30px rgba(96,165,250,.45);
 
+    background:var(--accent);
+
+    transition:
+        background .4s ease,
+        transform .25s ease,
+        box-shadow .25s ease;
+
 }
 
 #playlistButton{
