@@ -319,14 +319,14 @@ const songs = [
     },
     {
         "id": 30,
-        "title": "Volcán",
-        "artist": "Cristian Castro",
+        "title": "Can Do",
+        "artist": "GRANRODEO",
         "cover": "assets/covers/30.jpg",
         "message": "",
-        "videoId": "ggQaHRVKykI",
-        "duration": "5:00",
-        "videoTitle": "Cristian Castro - Volcán (Hit Factory Criteria)",
-        "channel": "CristianCastroVEVO"
+        "videoId": "feEgW1TeSMs",
+        "duration": "4:24",
+        "videoTitle": "GRANRODEO -- Can Do | Lyrics Video (Kan/Rom/Eng)",
+        "channel": "AKAly (アカリ)"
     },
     {
         "id": 31,
