@@ -416,18 +416,18 @@ const songs = [
     },
     {
         "id": 27,
-        "title": "Fly Away",
-        "artist": "Lenny Kravitz",
+        "title": "Cristina",
+        "artist": "Sebastian Yatra",
         "cover": "assets/covers/27.jpg",
         "message": "",
-        "videoId": "EvuL5jyCHOw",
-        "duration": "3:45",
-        "videoTitle": "Lenny Kravitz - Fly Away (Official Music Video)",
-        "channel": "LennyKravitzVEVO",
+        "videoId": "Iiyp9rR9zko",
+        "duration": "3:21",
+        "videoTitle": "Sebastian Yatra - Cristina (Letra)",
+        "channel": "LatinHype",
         theme: {
-            background: "#0B0A0C",
-            glow: "#FFB703",
-            accent: "#023E8A"
+            background: "#0B0C10",
+            glow: "#00F3FF",
+            accent: "#FF007F"
         }
     },
     {

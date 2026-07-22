@@ -78,9 +78,9 @@ Que cada canción tenga una personalidad propia.
 
 ## Diseño
 
-- [ ] Nueva tipografía.
-- [ ] Mejoras visuales del reproductor.
-- [ ] Mejoras visuales de la portada.
+- [X] Nueva tipografía.
+- [X] Mejoras visuales del reproductor.
+- [X] Mejoras visuales de la portada.
 
 ---
 
