@@ -1,0 +1,68 @@
+#particles{
+
+    position:fixed;
+
+    inset:0;
+
+    overflow:hidden;
+
+    pointer-events:none;
+
+    z-index:-1;
+
+}
+
+
+.particle{
+
+    position:absolute;
+
+    width:6px;
+
+    height:6px;
+
+    background:var(--glow);
+
+    border-radius:50%;
+
+    opacity:.5;
+
+    animation:
+        floatParticle
+        linear
+        infinite;
+
+}
+
+
+@keyframes floatParticle{
+
+    from{
+
+        transform:
+        translateY(100vh)
+        scale(.5);
+
+        opacity:0;
+
+    }
+
+
+    20%{
+
+        opacity:.6;
+
+    }
+
+
+    to{
+
+        transform:
+        translateY(-20vh)
+        scale(1.2);
+
+        opacity:0;
+
+    }
+
+}
