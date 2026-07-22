@@ -63,11 +63,11 @@ Que cada canción tenga una personalidad propia.
 
 ## Sistema de temas
 
-- [ ] Añadir objeto `theme` a todas las canciones.
-- [ ] Variables CSS dinámicas.
-- [ ] Función `applyTheme()`.
-- [ ] Cambiar el degradado del fondo.
-- [ ] Cambiar colores de acento.
+- [x] Añadir objeto `theme` a todas las canciones.
+- [x] Variables CSS dinámicas.
+- [x] Función `applyTheme()`.
+- [x] Cambiar el degradado del fondo.
+- [x] Cambiar colores de acento.
 
 ## Animaciones
 
