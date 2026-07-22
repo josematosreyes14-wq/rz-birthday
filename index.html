@@ -4,27 +4,38 @@
 <head>
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
-    <title>Canciones Para Ella</title>  
+    <title>Canciones Para Ella</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Nunito:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/ambient.css">
     <link rel="stylesheet" href="css/particles.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/intro.css">
+    <link rel="stylesheet" href="css/proofViewer.css">
     <link rel="stylesheet" href="css/player.css">
     <link rel="stylesheet" href="css/buttons.css">
     <link rel="stylesheet" href="css/sidebar.css">
     <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <link rel="icon" href="assets/icon/icon.png">
+
+    <link
+        rel="icon"
+        href="assets/icon/icon.png">
 
 </head>
 
@@ -32,12 +43,24 @@
 
     <section id="intro">
 
+        <div id="introBackground"></div>
+
+        <div id="introCharacter">
+
+            <div id="web"></div>
+
+            <div id="spiderman"></div>
+
+        </div>
+
         <div class="intro-container">
 
-            <h1>Una pequeña colección de canciones</h1>
+            <h1>Canciones</h1>
+            <h1>para Rodriguez</h1>
 
             <p>
-                Algunas canciones simplemente me recordaron a alguien.
+                Mereces mucho más
+                de lo que crees.
             </p>
 
             <button id="enterButton">
@@ -46,9 +69,58 @@
 
         </div>
 
+        <div id="proofPreview">
+
+            <span id="proofButton">
+                Pruebas
+            </span>
+
+            <img
+                id="proofImage"
+                src="assets/proofs/proofs.png"
+                alt="Pruebas">
+
+        </div>
+
     </section>
 
-    <script src = "welcome.js"></script>
+
+    <div id="proofViewer">
+
+        <div id="proofOverlay"></div>
+
+        <div id="proofContent">
+
+            <button id="closeProof">
+
+                ✕
+
+            </button>
+
+            <img
+                id="proofLargeImage"
+                src="assets/proofs/proofs.png"
+                alt="Pruebas">
+
+            <div id="proofMessage">
+
+                Adjunto pruebas de que esto no tiene nada que ver con lo que me dijiste hace unos días.
+
+                <br><br>
+
+                <strong>
+                    (Mira la fecha de creación del archivo.)
+                </strong>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="welcome.js"></script>
+    <script src="js/character.js"></script>
+    <script src="js/proofViewer.js"></script>
 
 </body>
 

@@ -10,26 +10,226 @@
 
     padding:20px;
 
-}
-.intro-container h1{
+    position:relative;
 
-    font-family:"Cormorant Garamond", serif;
-
-    letter-spacing:1px;
-
-    font-size:clamp(1.8rem,5vw,2.5rem);
-
-    line-height:1.2;
+    overflow:hidden;
 
 }
+
+
+/* =========================
+   FONDO
+========================= */
+
+#introBackground{
+
+    position:absolute;
+
+    inset:0;
+
+    background-image:
+        url("../assets/scenes/sunset/background.png");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    z-index:0;
+
+    filter:blur(8px);
+
+    transform:scale(1.08);
+
+}
+
+#introBackground::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+        rgba(0,0,0,.35);
+
+}
+
+
+/* =========================
+   SPIDERMAN
+========================= */
+
+#introCharacter{
+
+    position:absolute;
+
+    top:0;
+
+    left:12%;
+
+    z-index:1;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+
+#web{
+
+    width:2px;
+
+    height:170px;
+
+    background:white;
+
+    opacity:.55;
+
+}
+
+
+#spiderman{
+
+    width:80px;
+
+    height:90px;
+
+    background-image:
+        url("../assets/characters/idle.png");
+
+    background-size:contain;
+
+    background-repeat:no-repeat;
+
+    background-position:center;
+
+    image-rendering:pixelated;
+
+    transform-origin:top center;
+
+    animation:
+
+        swing 4s ease-in-out infinite,
+
+        float 3s ease-in-out infinite;
+
+}
+
+
+/* =========================
+   ANIMACIONES
+========================= */
+
+@keyframes swing{
+
+    0%{
+
+        transform:
+            rotate(-10deg);
+
+    }
+
+    25%{
+
+        transform:
+            rotate(-4deg);
+
+    }
+
+    50%{
+
+        transform:
+            rotate(10deg);
+
+    }
+
+    75%{
+
+        transform:
+            rotate(4deg);
+
+    }
+
+    100%{
+
+        transform:
+            rotate(-10deg);
+
+    }
+
+}
+
+
+@keyframes float{
+
+    0%{
+
+        margin-top:-2px;
+
+    }
+
+    50%{
+
+        margin-top:8px;
+
+    }
+
+    100%{
+
+        margin-top:-2px;
+
+    }
+
+}
+
+
+/* =========================
+   CONTENIDO
+========================= */
+
+.intro-container,
+#proofPreview{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+
 .intro-container{
 
     width:100%;
+
     max-width:520px;
 
     text-align:center;
 
 }
+
+
+.intro-container h1{
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    letter-spacing:1px;
+
+    font-size:
+        clamp(1.8rem,5vw,2.5rem);
+
+    line-height:1.2;
+
+}
+
+
 .intro-container p{
 
     color:var(--secondary);
@@ -39,6 +239,7 @@
     margin-bottom:40px;
 
 }
+
 
 #enterButton{
 
@@ -62,10 +263,12 @@
 
 }
 
+
 #enterButton:hover{
 
     box-shadow:
-    0 10px 30px rgba(96,165,250,.35);
+        0 10px 30px
+        rgba(96,165,250,.35);
 
 }
 
