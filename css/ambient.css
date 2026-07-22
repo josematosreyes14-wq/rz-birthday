@@ -1,0 +1,26 @@
+#ambientGlow{
+
+    position:fixed;
+
+    inset:-20%;
+
+    background:
+    radial-gradient(
+        circle,
+        var(--glow),
+        transparent 60%
+    );
+
+    opacity:.12;
+
+    filter:blur(90px);
+
+    pointer-events:none;
+
+    z-index:-1;
+
+    transition:
+        background 1s ease,
+        opacity 1s ease;
+
+}
