@@ -71,8 +71,8 @@ Que cada canción tenga una personalidad propia.
 
 ## Animaciones
 
-- [ ] Fade entre canciones.
-- [ ] Fade para portada.
+- [x] Fade entre canciones.
+- [x] Fade para portada.
 - [ ] Fade para información.
 - [ ] Transición del fondo.
 

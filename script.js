@@ -1,3 +1,4 @@
+const TRANSITION_TIME = 250;
 
 const ui = {    
     playlist: document.getElementById("playlist"),
@@ -13,6 +14,8 @@ const ui = {
     youtube: document.getElementById("youtubeButton"),
 
     albumCover: document.getElementById("albumCover"),
+
+    songContent: document.getElementById("songContent"),
 
     playlistButton: document.getElementById("playlistButton"),
 
@@ -69,30 +72,50 @@ function applyTheme(song) {
 
 }
 
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function animateSongChange(index) {
+
+    ui.songContent.classList.add("fade-out");
+
+    await sleep(TRANSITION_TIME);
+
+    showSong(index);
+
+    ui.songContent.classList.remove("fade-out");
+    ui.songContent.classList.add("fade-in");
+
+    await sleep(TRANSITION_TIME);
+
+    ui.songContent.classList.remove("fade-in");
+
+}
+
+// Actualiza toda la interfaz con la información de la canción actual
 function showSong(index) {
 
     const song = songs[index];
 
     ui.title.textContent = song.title;
     ui.artist.textContent = song.artist;
-
     ui.duration.textContent = song.duration || "";
     ui.message.textContent = song.message || "";
 
     ui.counter.textContent =
         `Canción ${index + 1} de ${songs.length}`;
 
-    if(song.cover){
-        ui.albumCover.src=song.cover;
-    } else {
-        ui.albumCover.src="assets/covers/default.jpg";
-    }
+    
+    ui.albumCover.src = song.cover || "assets/covers/default.jpg";
+    ui.albumCover.alt = `${song.title} - ${song.artist}`;
 
-    ui.previous.disabled = index === 0;
-    ui.next.disabled = index === songs.length - 1;
+    applyTheme(song);
 
     updateActiveSong();
-    applyTheme(song);
+
+    ui.previous.disabled = (index === 0);
+    ui.next.disabled = (index === songs.length - 1);
 
 }
 
@@ -122,7 +145,7 @@ function buildPlaylist() {
 
             currentSong = index;
 
-            showSong(currentSong);
+            animateSongChange(currentSong);
 
             closeSidebar();
 
@@ -177,7 +200,7 @@ ui.next.addEventListener("click", () => {
 
         currentSong++;
 
-        showSong(currentSong);
+        animateSongChange(currentSong);
 
     }
 
@@ -189,7 +212,7 @@ ui.previous.addEventListener("click", () => {
 
         currentSong--;
 
-        showSong(currentSong);
+        animateSongChange(currentSong);
 
     }
 

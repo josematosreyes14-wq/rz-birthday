@@ -26,33 +26,38 @@
 
         <div class="playlist-container">
 
-            <div class="counter-container">
+            <div id="songContent">
 
-                <p id="songCounter"></p>
+                <div class="counter-container">
+
+                    <p id="songCounter"></p>
+
+                </div>
+
+                <div class="album-container">
+
+                    <img
+                        id="albumCover"
+                        src=""
+                        alt="Portada del álbum">
+
+                </div>
+
+                <div class="song-info">
+
+                    <h2 id="songTitle"></h2>
+
+                    <h3 id="songArtist"></h3>
+
+                    <p id="songDuration"></p>
+
+                    <p id="songMessage"></p>
+
+                </div>
 
             </div>
 
-            <div class="album-container">
-
-                <img
-                    id="albumCover"
-                    src=""
-                    alt="Portada del álbum">
-
-            </div>
-
-            <div class="song-info">
-
-                <h2 id="songTitle"></h2>
-
-                <h3 id="songArtist"></h3>
-
-                <p id="songDuration"></p>
-
-                <p id="songMessage"></p>
-
-            </div>
-
+            <!-- Controles (no se animan) -->
             <div class="controls">
 
                 <button id="previousButton">
@@ -85,7 +90,6 @@
         <div id="playlistList"></div>
 
     </aside>
-
 
     <script src="songs.js"></script>
     <script src="script.js"></script>

@@ -1,0 +1,23 @@
+#songContent{
+
+    transition:
+        opacity .25s ease,
+        transform .25s ease;
+
+}
+
+.fade-out{
+
+    opacity:0;
+
+    transform:translateY(10px);
+
+}
+
+.fade-in{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
