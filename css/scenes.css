@@ -1,0 +1,71 @@
+#scene{
+
+    position:fixed;
+
+    inset:0;
+
+    overflow:hidden;
+
+    z-index:-1;
+
+}
+
+#sceneBackground{
+
+    position:absolute;
+
+    inset:0;
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    transition:opacity .6s ease;
+
+    filter:
+        brightness(.85)
+        saturate(.9)
+        blur(1px);
+
+}
+
+#sceneBackground::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+        radial-gradient(
+            circle,
+            transparent 40%,
+            rgba(0,0,0,.35) 100%
+        );
+
+}
+
+#sceneBackground::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.25);
+
+}
+
+#sceneCharacters{
+
+    position:absolute;
+
+    inset:0;
+
+    pointer-events:none;
+
+}

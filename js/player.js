@@ -1,5 +1,8 @@
 import { ui } from "./ui.js";
 import { applyTheme } from "./theme.js";
+import {
+    changeScene
+} from "./scenes/sceneManager.js";
 
 const TRANSITION_TIME = 250;
 
@@ -69,6 +72,10 @@ function showSong(index) {
     ui.albumCover.alt = `${song.title} - ${song.artist}`;
 
     applyTheme(song);
+    
+    changeScene(
+        song.scene
+    );
 
     updateActiveSong();
 

@@ -8,6 +8,7 @@ const songs = [
         "duration": "4:44",
         "videoTitle": "DANTE - POR SI ME FALTAS",
         "channel": "DanteACVEVO",
+        "scene": "night",
         theme: {
             background: "#0A0A0A",
             glow: "#F5F5F7",
@@ -24,6 +25,7 @@ const songs = [
         "duration": "3:43",
         "videoTitle": "Un Beso Y Una Flor",
         "channel": "nino bravo vevo",
+        "scene": "sunset",
         theme: {
             background: "#3D2314",
             glow: "#F4A261",
@@ -40,6 +42,7 @@ const songs = [
         "duration": "4:35",
         "videoTitle": "Roberto Carlos - Ese Tipo Soy Yo (Esse Cara Sou Eu) (Lyrics)",
         "channel": "Roberto Carlos",
+        "scene": "sunset",
         theme: {
             background: "#0B1325",
             glow: "#F4EAD4",
@@ -56,6 +59,7 @@ const songs = [
         "duration": "3:06",
         "videoTitle": "Livingston - Glow (Visualizer)",
         "channel": "Livingston",
+        "scene": "night",
         theme: {
             background: "#050B14",
             glow: "#00F5FF",
@@ -72,6 +76,7 @@ const songs = [
         "duration": "3:01",
         "videoTitle": "MILO J - M.A.I (Video Oficial)",
         "channel": "MILO J",
+        "scene": "night",
         theme: {
             background: "#1F140E",
             glow: "#FFF1D0",
@@ -88,6 +93,7 @@ const songs = [
         "duration": "4:29",
         "videoTitle": "Maroon 5 - She Will Be Loved (Official Music Video)",
         "channel": "Maroon5VEVO",
+        "scene": "night",
         theme: {
             background: "#2B3A42",
             glow: "#EFEFEF",
@@ -104,6 +110,7 @@ const songs = [
         "duration": "4:01",
         "videoTitle": "The Fray - You Found Me (Official Video)",
         "channel": "thefrayVEVO",
+        "scene": "night",
         theme: {
             background: "#1A1C20",
             glow: "#93B5C6",
@@ -120,6 +127,7 @@ const songs = [
         "duration": "3:59",
         "videoTitle": "Kiss - I Was Made For Lovin' You",
         "channel": "KissVEVO",
+        "scene": "sunset",
         theme: {
             background: "#050505",
             glow: "#FF007F",
@@ -136,6 +144,7 @@ const songs = [
         "duration": "4:11",
         "videoTitle": "Hoobastank - The Reason (Official Music Video)",
         "channel": "HoobastankVEVO",
+        "scene": "night",
         theme: {
             background: "#24282F",
             glow: "#D1E8E2",
@@ -152,6 +161,7 @@ const songs = [
         "duration": "4:38",
         "videoTitle": "Oasis - Wonderwall (Official Video)",
         "channel": "OasisVEVO",
+        "scene": "night",
         theme: {
             background: "#1C2826",
             glow: "#F5EBE0",
@@ -168,6 +178,7 @@ const songs = [
         "duration": "4:33",
         "videoTitle": "Andrés Calamaro - Flaca (Videoclip Oficial)",
         "channel": "Warner Music Spain",
+        "scene": "freedom",
         theme: {
             background: "#1C1310",
             glow: "#FAD02C",
@@ -184,6 +195,7 @@ const songs = [
         "duration": "3:31",
         "videoTitle": "Lips On You; Maroon5 (sub. español)",
         "channel": "Spring Sadness",
+        "scene": "sunset",
         theme: {
             background: "#0D0B12",
             glow: "#9D4EDD",
@@ -200,6 +212,7 @@ const songs = [
         "duration": "2:19",
         "videoTitle": "Willian - Sol (Video Lyrics)",
         "channel": "Willian",
+        "scene": "sunset",
         theme: {
             background: "#120E16",
             glow: "#FF9F1C",
@@ -216,6 +229,7 @@ const songs = [
         "duration": "5:03",
         "videoTitle": "Guns N' Roses - Sweet Child O' Mine (Official Music Video)",
         "channel": "GunsNRosesVEVO",
+        "scene": "freedom",
         theme: {
             background: "#0A090B",
             glow: "#00D2FF",
@@ -232,6 +246,7 @@ const songs = [
         "duration": "4:54",
         "videoTitle": "Coldplay - Fix You (Official Video)",
         "channel": "Coldplay",
+        "scene": "night",
         theme: {
             background: "#0F141D",
             glow: "#FFE5A3",
@@ -248,6 +263,7 @@ const songs = [
         "duration": "4:20",
         "videoTitle": "Enamorado Tuyo - El Cuarteto de Nos // Letra",
         "channel": "Canciones Que Debes Escuchar Antes de Morir ",
+        "scene": "freedom",
         theme: {
             background: "#A8DADC",
             glow: "#FF007F",
@@ -264,6 +280,7 @@ const songs = [
         "duration": "3:05",
         "videoTitle": "Livingston - Last Man Standing (Official Visualizer)",
         "channel": "Livingston",
+        "scene": "forest",
         theme: {
             background: "#140B19",
             glow: "#F5E4BC",
@@ -280,6 +297,7 @@ const songs = [
         "duration": "3:37",
         "videoTitle": "Beret - Si Por Mi Fuera (Videoclip Oficial)",
         "channel": "BERET",
+        "scene": "freedom",
         theme: {
             background: "#141A29",
             glow: "#FF7B00",
@@ -296,6 +314,7 @@ const songs = [
         "duration": "4:29",
         "videoTitle": "Jarabe De Palo - La Flaca (Videoclip Oficial)",
         "channel": "Jarabe de Palo Catálogo",
+        "scene": "sunset",
         theme: {
             background: "#0B1325",
             glow: "#F4EAD4",
@@ -312,6 +331,7 @@ const songs = [
         "duration": "3:15",
         "videoTitle": "Max McNown - Better Me For You (Brown Eyes) (Official Performance Video)",
         "channel": "Max McNown",
+        "scene": "sunset",
         theme: {
             background: "#1C1C1E",
             glow: "#E5BA73",
@@ -328,6 +348,7 @@ const songs = [
         "duration": "3:47",
         "videoTitle": "Mägo de Oz - Y que nunca te falte un \"te quiero\" (Audio Oficial)",
         "channel": "Mägo de Oz",
+        "scene": "sunset",
         theme: {
             background: "#14361F",
             glow: "#FFD166",
@@ -344,6 +365,7 @@ const songs = [
         "duration": "3:20",
         "videoTitle": "Ike Dweck - Dawn",
         "channel": "Neon City",
+        "scene": "night",
         theme: {
             background: "#1E2229",
             glow: "#FAD390",
@@ -360,6 +382,7 @@ const songs = [
         "duration": "3:45",
         "videoTitle": "Rojitas las orejas - Fito & Fitipaldis",
         "channel": "audreybusty",
+        "scene": "sunset",
         theme: {
             background: "#1E1B1A",
             glow: "#FFF8E7",
@@ -376,6 +399,7 @@ const songs = [
         "duration": "5:06",
         "videoTitle": "Måneskin - Coraline // sub esp + lyrics",
         "channel": "cora",
+        "scene": "rain",
         theme: {
             background: "#0F0F12",
             glow: "#E3C185",
@@ -392,6 +416,7 @@ const songs = [
         "duration": "2:47",
         "videoTitle": "John Michael Howell - Delusional (official music video)",
         "channel": "JohnMichaelHowell",
+        "scene": "rain",
         theme: {
             background: "#140926",
             glow: "#FF4DAD",
@@ -408,6 +433,7 @@ const songs = [
         "duration": "3:00",
         "videoTitle": "Green Day - Ordinary World (Sub.Español)",
         "channel": "Musical Lyrics",
+        "scene": "rain",
         theme: {
             background: "#1E1611",
             glow: "#F7D070",
@@ -424,6 +450,7 @@ const songs = [
         "duration": "3:21",
         "videoTitle": "Sebastian Yatra - Cristina (Letra)",
         "channel": "LatinHype",
+        "scene": "sunset",
         theme: {
             background: "#0B0C10",
             glow: "#00F3FF",
@@ -440,6 +467,7 @@ const songs = [
         "duration": "2:26",
         "videoTitle": "Green Day - 2000 Light Years Away",
         "channel": "Green Day",
+        "scene": "night",
         theme: {
             background: "#0F111A",
             glow: "#00FF87",
@@ -456,6 +484,7 @@ const songs = [
         "duration": "4:06",
         "videoTitle": "Fito & Fitipaldis - Me acordé de ti - Con letra.",
         "channel": "Ary705",
+        "scene": "forest",
         theme: {
             background: "#1B263B",
             glow: "#E9D8A6",
@@ -472,6 +501,7 @@ const songs = [
         "duration": "4:24",
         "videoTitle": "GRANRODEO -- Can Do | Lyrics Video (Kan/Rom/Eng)",
         "channel": "AKAly (アカリ)",
+        "scene": "freedom",
         theme: {
             background: "#14100E",
             glow: "#FF6B00",
@@ -488,6 +518,7 @@ const songs = [
         "duration": "7:33",
         "videoTitle": "Mägo de Oz - La danza del fuego (Videoclip Oficial)",
         "channel": "Mägo de Oz",
+        "scene": "forest",
         theme: {
             background: "#0A140F",
             glow: "#FF5400",
@@ -504,6 +535,7 @@ const songs = [
         "duration": "3:02",
         "videoTitle": "Alec Benjamin - If We Have Each Other [Official Music Video]",
         "channel": "Alec Benjamin",
+        "scene": "night",
         theme: {
             background: "#231B15",
             glow: "#FFE5D9",
@@ -520,6 +552,7 @@ const songs = [
         "duration": "3:47",
         "videoTitle": "Green Day - Bobby Sox (Official Music Video)",
         "channel": "Green Day",
+        "scene": "freedom",
         theme: {
             background: "#131418",
             glow: "#FF2A85",
@@ -536,6 +569,7 @@ const songs = [
         "duration": "3:39",
         "videoTitle": "Damiano David - The First Time (Official Visual Video)",
         "channel": "DamianoDavidVEVO",
+        "scene": "night",
         theme: {
             background: "#090A10",
             glow: "#39FF14",
@@ -552,6 +586,7 @@ const songs = [
         "duration": "3:16",
         "videoTitle": "Walls, Dani Fernández - Vulnerable (Videoclip Oficial)",
         "channel": "Walls",
+        "scene": "rain",
         theme: {
             background: "#1B1E24",
             glow: "#E8ECEF",

@@ -91,9 +91,9 @@ Que la página se sienta viva.
 
 ## Ambientación
 
-- [ ] Fondo reactivo según la canción.
-- [ ] Colores ambientales.
-- [ ] Efecto glow.
+- [X] Fondo reactivo según la canción.
+- [X] Colores ambientales.
+- [X] Efecto glow.
 
 ## Elementos decorativos
 

@@ -19,6 +19,16 @@
 
     text-align:center;
 
+    .playlist-container{
+
+    background:rgba(15,23,42,.55);
+
+    backdrop-filter:blur(14px);
+
+    border:1px solid rgba(255,255,255,.12);
+
+}
+
 }
 
 .counter-container{
@@ -94,6 +104,15 @@
     flex-direction:column;
 
     gap:10px;
+
+}
+
+.song-info h2,
+.song-info h3,
+.song-info p{
+
+    text-shadow:
+        0 2px 8px rgba(0,0,0,.85);
 
 }
 

@@ -1,4 +1,8 @@
 import {
+    initParticles
+} from "./effects/particles.js";
+
+import {
     buildPlaylist,
     showSong
 } from "./player.js";
@@ -9,6 +13,7 @@ import {
 } from "./sidebar.js";
 
 initSidebar();
+initParticles();
 buildPlaylist();
 showSong(0);
 closeSidebar();

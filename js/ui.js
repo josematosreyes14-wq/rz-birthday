@@ -21,7 +21,11 @@ const ui = {
     closeSidebarButton: document.getElementById("closeSidebarButton"),
     sidebar: document.getElementById("sidebar"),
     playlistList: document.getElementById("playlistList"),
-    overlay: document.getElementById("overlay")
+    overlay: document.getElementById("overlay"),
+
+    sceneBackground: document.getElementById("sceneBackground"),
+    sceneEffects: document.getElementById("sceneEffects"),
+    sceneCharacters: document.getElementById("sceneCharacters"),
 
 };
 
