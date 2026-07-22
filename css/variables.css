@@ -1,16 +1,21 @@
 :root{
 
-    --background:#0f172a;
+    /* Tema dinámico */
+
+    --bg-primary:#0f172a;
+    --glow:#ffffff;
+    --accent:#60a5fa;
+
+    /* Colores fijos */
+
+    --bg-secondary:#111827;
     --surface:#1e293b;
 
     --text:#f8fafc;
     --secondary:#cbd5e1;
 
-    --accent:#60a5fa;
+    /* Sombras */
 
-    --radius:18px;
+    --shadow:rgba(0,0,0,.25);
 
 }
-
-
-

@@ -50,6 +50,25 @@ function updateActiveSong() {
 
 }
 
+function applyTheme(song) {
+
+    document.documentElement.style.setProperty(
+        "--bg-primary",
+        song.theme.background
+    );
+
+    document.documentElement.style.setProperty(
+        "--glow",
+        song.theme.glow
+    );
+
+    document.documentElement.style.setProperty(
+        "--accent",
+        song.theme.accent
+    );
+
+}
+
 function showSong(index) {
 
     const song = songs[index];
@@ -73,6 +92,7 @@ function showSong(index) {
     ui.next.disabled = index === songs.length - 1;
 
     updateActiveSong();
+    applyTheme(song);
 
 }
 

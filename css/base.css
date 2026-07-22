@@ -14,11 +14,20 @@ body{
 
     font-family:"Poppins",sans-serif;
 
-    background:linear-gradient(
-        180deg,
-        #0f172a,
-        #111827
-    );
+    background:
+        radial-gradient(
+            circle at top,
+            color-mix(in srgb, var(--glow) 8%, transparent),
+            transparent 50%
+        ),
+        linear-gradient(
+            180deg,
+            var(--bg-primary),
+            var(--bg-secondary)
+        );
+
+    transition:
+        background .5s ease;
 
     color:var(--text);
 
