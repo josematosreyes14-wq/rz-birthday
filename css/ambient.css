@@ -5,13 +5,13 @@
     inset:-20%;
 
     background:
-    radial-gradient(
+        radial-gradient(
         circle,
-        var(--glow),
-        transparent 60%
+        var(--glow) 0%,
+        transparent 70%
     );
 
-    opacity:.12;
+    opacity:.20;
 
     filter:blur(90px);
 
@@ -19,8 +19,31 @@
 
     z-index:-1;
 
+    animation:
+        ambientPulse 5s infinite ease-in-out;
+
     transition:
         background 1s ease,
         opacity 1s ease;
+
+}
+
+@keyframes ambientPulse{
+
+    0%,100%{
+
+        transform:
+        scale(1)
+        translate(0,0);
+
+    }
+
+    50%{
+
+        transform:
+        scale(1.15)
+        translate(20px,-20px);
+
+    }
 
 }

@@ -3,6 +3,8 @@ const TRANSITION_TIME = 250;
 const ui = {    
     playlist: document.getElementById("playlist"),
 
+    ambientGlow: document.getElementById("ambientGlow"),
+
     title: document.getElementById("songTitle"),
     artist: document.getElementById("songArtist"),
     duration: document.getElementById("songDuration"),
@@ -69,6 +71,15 @@ function applyTheme(song) {
         "--accent",
         song.theme.accent
     );
+
+
+    ui.ambientGlow.style.background = `
+        radial-gradient(
+            circle,
+            ${song.theme.glow},
+            transparent 60%
+        )
+    `;
 
 }
 
