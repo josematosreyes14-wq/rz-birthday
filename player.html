@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Canciones Para Ella</title>
+    <title>Canciones Para Rodriguez</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/scenes.css">
     <link rel="stylesheet" href="css/ambient.css">
     <link rel="stylesheet" href="css/particles.css">
+    <link rel="stylesheet" href="css/character.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/intro.css">
     <link rel="stylesheet" href="css/player.css">
@@ -39,11 +40,11 @@
 
     </div>
 
-    <div id="introCharacter">
+    <div id="character" data-mode="player">
 
-        <div id="web"></div>
+        <div id="speechBubble"></div>
 
-        <div id="spiderman"></div>
+        <div id="sprite"></div>
 
     </div>
 
@@ -136,6 +137,7 @@
     </aside>
 
     <script src="js/character.js"></script>
+    <script src="js/characterAI.js"></script>
     <script src="songs.js"></script>
     <script type="module" src="js/main.js"></script>
 

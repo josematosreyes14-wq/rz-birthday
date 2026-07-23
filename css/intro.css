@@ -62,9 +62,9 @@
    SPIDERMAN
 ========================= */
 
-#introCharacter{
+#character{
 
-    position:absolute;
+    position:fixed;
 
     top:0;
 
@@ -78,30 +78,66 @@
 
     align-items:center;
 
+    transition:
+        left .5s linear,
+        top .5s ease,
+        transform .2s ease;
+
 }
 
 
-#web{
+#speechBubble{
 
-    width:2px;
+    position:absolute;
 
-    height:170px;
+    bottom:100%;
+
+    left:50%;
+
+    transform:translateX(-50%) scale(0);
+
+    width:42px;
+    height:42px;
+
+    border-radius:50%;
 
     background:white;
 
-    opacity:.55;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:22px;
+
+    box-shadow:
+        0 6px 20px rgba(0,0,0,.25);
+
+    opacity:0;
+
+    pointer-events:none;
+
+    transition:
+        transform .25s ease,
+        opacity .25s ease;
+
+}
+
+#speechBubble.show{
+
+    opacity:1;
+
+    transform:
+        translateX(-50%)
+        scale(1);
 
 }
 
 
-#spiderman{
+#sprite{
 
     width:80px;
 
     height:90px;
-
-    background-image:
-        url("../assets/characters/idle.png");
 
     background-size:contain;
 
@@ -119,70 +155,35 @@
 
         float 3s ease-in-out infinite;
 
-}
+    transform-origin:
+        bottom center;
 
+}
 
 /* =========================
    ANIMACIONES
 ========================= */
 
-@keyframes swing{
 
-    0%{
-
-        transform:
-            rotate(-10deg);
-
-    }
-
-    25%{
-
-        transform:
-            rotate(-4deg);
-
-    }
-
-    50%{
-
-        transform:
-            rotate(10deg);
-
-    }
-
-    75%{
-
-        transform:
-            rotate(4deg);
-
-    }
-
-    100%{
-
-        transform:
-            rotate(-10deg);
-
-    }
-
-}
 
 
 @keyframes float{
 
     0%{
 
-        margin-top:-2px;
+        margin-top:0px;
 
     }
 
     50%{
 
-        margin-top:8px;
+        margin-top:2px;
 
     }
 
     100%{
 
-        margin-top:-2px;
+        margin-top:0px;
 
     }
 

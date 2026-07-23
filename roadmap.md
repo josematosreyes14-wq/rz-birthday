@@ -97,10 +97,10 @@ Que la página se sienta viva.
 
 ## Elementos decorativos
 
-- [ ] Muñequitos estilo Ghibli.
-- [ ] Estrellas.
-- [ ] Luciérnagas.
-- [ ] Flores.
+- [X] Muñequitos estilo Ghibli/Pixel Art.
+- [X] Agregar Pruebas.
+- [ ] Implementacion del motor de particulas.
+- [ ] Crear escenas y animaciones personalizadas.
 
 ## Interacciones
 

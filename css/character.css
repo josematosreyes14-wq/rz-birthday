@@ -1,0 +1,83 @@
+/* =========================
+   GLOBO DE DIÁLOGO
+========================= */
+
+#speechBubble{
+
+    position:absolute;
+
+    bottom:95px;
+
+    left:50%;
+
+    transform:
+        translateX(-50%)
+        scale(.6);
+
+    min-width:42px;
+
+    height:42px;
+
+    padding:0 12px;
+
+    background:white;
+
+    border-radius:20px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:22px;
+
+    opacity:0;
+
+    pointer-events:none;
+
+    box-shadow:
+        0 6px 18px
+        rgba(0,0,0,.25);
+
+    transition:
+        opacity .25s ease,
+        transform .25s ease;
+
+}
+
+
+
+#speechBubble::after{
+
+    content:"";
+
+    position:absolute;
+
+    bottom:-8px;
+
+    left:50%;
+
+    transform:
+        translateX(-50%)
+        rotate(45deg);
+
+    width:12px;
+
+    height:12px;
+
+    background:white;
+
+}
+
+
+
+#speechBubble.show{
+
+    opacity:1;
+
+    transform:
+        translateX(-50%)
+        scale(1);
+
+}
