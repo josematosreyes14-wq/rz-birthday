@@ -746,6 +746,8 @@ character.addEventListener(
             emoji
         );
 
+        window.characterEasterEggs.registerTouch();
+
     }
 
 );
@@ -807,7 +809,8 @@ window.character = {
 
     checkEdges,
 
-    getState
+    getState,
 
+    showReaction
 
 };
