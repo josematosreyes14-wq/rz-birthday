@@ -71,6 +71,10 @@ function showSong(index) {
     ui.albumCover.src = song.cover || "assets/covers/default.jpg";
     ui.albumCover.alt = `${song.title} - ${song.artist}`;
 
+    window.audioManager.changeTrack(
+        song.scene
+    );
+
     applyTheme(song);
     
     changeScene(
